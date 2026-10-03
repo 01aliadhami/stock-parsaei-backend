@@ -1,0 +1,28 @@
+{
+  "name": "stock-parsaei-backend",
+  "version": "1.0.0",
+  "description": "Backend for Stock Parsaei shop",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [
+    "shop",
+    "auto-parts"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.5",
+    "express": "^4.22.3",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.24.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

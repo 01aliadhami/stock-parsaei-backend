@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Environment (خیلی مهم - JWT_SECRET و رمز دیتابیس توشه)
+.env
+.env.local
+.env.*.local
+
+# Uploads (عکس‌های آپلود شده - نباید توی گیت باشن)
+uploads/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
