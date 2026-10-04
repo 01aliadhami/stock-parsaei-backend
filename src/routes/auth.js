@@ -80,6 +80,9 @@ router.post("/login", async (req, res) => {
     if (!ok) {
       return res.status(401).json({ error: "نام کاربری یا رمز اشتباه است" });
     }
+    if (user.is_blocked) {
+      return res.status(403).json({ error: "حساب شما مسدود شده است" });
+    }
 
     await pool.execute("UPDATE users SET last_login = NOW() WHERE id = ?", [
       user.id,
